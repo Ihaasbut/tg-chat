@@ -1,0 +1,56 @@
+.noContact {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  max-width: 390px;
+  margin: auto;
+  justify-items: center;
+  padding: 32px;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.graphic {
+  position: relative;
+  display: grid;
+  width: 126px;
+  height: 126px;
+  margin-bottom: 28px;
+  place-items: center;
+  color: var(--color-primary-light);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 40px;
+  box-shadow: 0 20px 50px var(--color-primary-soft);
+  transform: rotate(-4deg);
+
+  > svg {
+    width: 54px;
+  }
+}
+
+.bubble {
+  position: absolute;
+  background: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 6px 17px var(--color-primary-soft);
+}
+
+.bubbleOne {
+  top: 10px;
+  right: -26px;
+  width: 43px;
+  height: 23px;
+}
+
+.bubbleTwo {
+  bottom: 4px;
+  left: -20px;
+  width: 35px;
+  height: 20px;
+}
+
+.description {
+  margin-top: 12px;
+  color: var(--color-muted);
+}

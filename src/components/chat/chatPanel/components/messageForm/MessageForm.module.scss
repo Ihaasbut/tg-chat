@@ -1,0 +1,36 @@
+.messageForm {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  min-height: 76px;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 12px 24px;
+  background: var(--color-white);
+  border-top: 1px solid var(--color-border);
+  backdrop-filter: blur(14px);
+
+  @include tablet {
+    min-height: 70px;
+    padding: 10px 12px;
+  }
+}
+
+.withCount {
+  textarea {
+    padding-right: 104px;
+  }
+}
+
+.count {
+  position: absolute;
+  right: 112px;
+  bottom: 26px;
+  color: var(--color-muted);
+  pointer-events: none;
+
+  @include tablet {
+    right: 100px;
+    bottom: 22px;
+  }
+}

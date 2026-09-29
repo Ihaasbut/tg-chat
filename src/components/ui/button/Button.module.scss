@@ -1,0 +1,44 @@
+.button {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 0 20px;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.3s ease,
+    background 0.3s ease,
+    opacity 0.3s ease;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.65;
+  }
+}
+
+.blue {
+  color: var(--color-white);
+  background: var(--color-primary);
+  box-shadow: 0 10px 20px var(--color-primary-soft);
+
+  @include hover {
+    &:not(:disabled) {
+      background: var(--color-primary-light);
+      box-shadow: 0 13px 26px var(--color-primary-soft);
+    }
+  }
+}
+
+.light {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+}
+
+.skipPadding {
+  width: 48px;
+  min-width: 48px;
+  padding: 0;
+}

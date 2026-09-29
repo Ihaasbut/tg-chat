@@ -1,0 +1,84 @@
+.preview {
+  position: relative;
+  display: grid;
+  overflow: hidden;
+  place-items: center;
+  padding: 64px;
+  color: var(--color-white);
+  background:
+    radial-gradient(
+      circle at 25% 20%,
+      var(--color-primary-light),
+      transparent 30%
+    ),
+    linear-gradient(
+      150deg,
+      var(--color-primary) 0%,
+      var(--color-primary) 55%,
+      var(--color-primary) 100%
+    );
+
+  &::before {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    background: var(--color-primary-light);
+    border: 1px solid var(--color-white);
+    border-radius: 50%;
+    content: "";
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.orbit {
+  position: absolute;
+  display: block;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.orbitOne {
+  width: 610px;
+  height: 610px;
+}
+
+.orbitTwo {
+  width: 790px;
+  height: 790px;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 440px;
+}
+
+.icon {
+  display: grid;
+  width: 76px;
+  height: 76px;
+  margin-bottom: 35px;
+  place-items: center;
+  background: var(--color-primary-light);
+  border: 1px solid var(--color-white);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+
+  svg {
+    width: 36px;
+  }
+}
+
+.title {
+  max-width: 400px;
+  font-size: clamp(32px, 4vw, 51px);
+  letter-spacing: -2px;
+}
+
+.description {
+  margin: 20px 0 42px;
+  color: var(--color-white);
+}

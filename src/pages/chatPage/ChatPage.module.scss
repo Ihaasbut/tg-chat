@@ -1,0 +1,53 @@
+.page {
+  display: grid;
+  grid-template-columns: 350px minmax(0, 1fr);
+  width: min(1400px, 100%);
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--color-white);
+  box-shadow: 0 0 80px var(--color-border);
+
+  @include tablet {
+    display: block;
+    height: 100%;
+  }
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, var(--color-white), transparent 28%),
+    linear-gradient(
+      150deg,
+      var(--color-background),
+      var(--color-background) 58%,
+      var(--color-primary-soft)
+    );
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(
+      var(--color-primary-soft) 0.8px,
+      transparent 0.8px
+    );
+    background-size: 19px 19px;
+    content: "";
+    pointer-events: none;
+  }
+
+  @include tablet {
+    height: 100%;
+  }
+}
+
+.withoutContact {
+  @include tablet {
+    display: none;
+  }
+}

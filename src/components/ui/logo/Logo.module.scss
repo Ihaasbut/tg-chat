@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: var(--color-text);
+  letter-spacing: -0.4px;
+}
+
+.compact {
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}

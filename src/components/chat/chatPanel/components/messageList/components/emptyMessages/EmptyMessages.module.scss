@@ -1,0 +1,23 @@
+.empty {
+  display: grid;
+  align-self: center;
+  justify-items: center;
+  margin: auto;
+  color: var(--color-muted);
+  text-align: center;
+
+  p {
+    margin-top: 5px;
+  }
+}
+
+.emptyIcon {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 13px;
+  place-items: center;
+  color: var(--color-primary-light);
+  background: var(--color-white);
+  border-radius: 15px;
+}

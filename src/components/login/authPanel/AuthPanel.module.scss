@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(36px, 5vw, 72px);
+
+  @include tablet {
+    padding: 32px 24px;
+    justify-content: flex-start;
+  }
+}
+
+.logo {
+  margin-bottom: 72px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+}
+
+.heading {
+  margin-bottom: 28px;
+  color: var(--color-text);
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.description {
+  max-width: 430px;
+  margin-top: 16px;
+  color: var(--color-muted);
+}
+
+.securityNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  color: var(--color-muted);
+}

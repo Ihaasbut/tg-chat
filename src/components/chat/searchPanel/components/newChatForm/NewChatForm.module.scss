@@ -1,0 +1,51 @@
+.newChat {
+  position: relative;
+  margin-top: 50px;
+  color: var(--color-text);
+
+  @include tablet {
+    margin-top: 44px;
+  }
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--color-primary);
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 10px 0 22px;
+  color: var(--color-muted);
+}
+
+.error {
+  margin-top: 12px;
+}
+
+.locked {
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
+
+  @include tablet {
+    opacity: 1;
+    pointer-events: auto;
+    user-select: auto;
+  }
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tablet {
+    display: none;
+  }
+}

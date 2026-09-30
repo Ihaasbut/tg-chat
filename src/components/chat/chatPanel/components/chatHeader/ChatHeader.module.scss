@@ -17,10 +17,18 @@
 
 .mobileBack {
   display: none;
-  margin-right: 0px;
+  margin-right: 12px;
 
   @include tablet {
     display: flex;
+  }
+
+  button {
+    width: 42px;
+    min-width: 42px;
+    height: 42px;
+    min-height: 42px;
+    border-radius: 14px;
   }
 }
 

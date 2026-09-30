@@ -1,5 +1,4 @@
 import { ShieldCheckIcon } from "@/components/ui/icons/ShieldCheckIcon";
-import { Logo } from "@/components/ui/logo/Logo";
 import { Typography } from "@/components/ui/typography/Typography";
 
 import { authPanel } from "./AuthPanel.consts";
@@ -11,10 +10,6 @@ export function AuthPanel() {
 
   return (
     <section className={styles.card} aria-labelledby={titleId}>
-      <div className={styles.logo}>
-        <Logo />
-      </div>
-
       <div className={styles.heading}>
         <Typography variant="caption" className={styles.eyebrow}>
           {eyebrow}

@@ -1,4 +1,4 @@
-# Telebridge
+# Telegram
 
 Браузерный чат с Telegram через GREEN-API.
 
